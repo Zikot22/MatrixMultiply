@@ -63,7 +63,7 @@ namespace AlgorithmsSolver
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Запишите матрицы!");
+                MessageBox.Show("Запишите матрицы корректно!");
             }
         }
 
