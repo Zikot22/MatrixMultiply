@@ -1,11 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using Algorithms;
 
@@ -67,7 +62,7 @@ namespace AlgorithmsSolver
             }
         }
 
-        public void GenerateMatrix(int m, int n)
+        private void GenerateMatrix(int m, int n)
         {
             CleanPanel();
             int x = 5;
@@ -85,13 +80,13 @@ namespace AlgorithmsSolver
             }
         }
 
-        public void CleanPanel()
+        private void CleanPanel()
         {
             textboxes.Clear();
             panel1.Controls.Clear();
         }
 
-        public double[,] ReadMatrix()
+        private double[,] ReadMatrix()
         {
             double[,] matrixArray = new double[tempM, tempN];
             try
@@ -116,7 +111,7 @@ namespace AlgorithmsSolver
             MessageBox.Show("Матрица записана");
             return matrixArray;
         }
-        public void PrintMatrix(double[,] array, int m, int n)
+        private void PrintMatrix(double[,] array, int m, int n)
         {
             GenerateMatrix(m, n);
             int index = 0;
